@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>ココカラカイギ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+      @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+      body {
+          position: relative;
+          font-family: 'Noto Sans Japanese', sans-serif;
+          font-weight: 100;
+      }
+      .icon-bar {background-color: #1E88E5}
+      .navbar {margin-bottom: 0px;}
+      .text { display: inline-block; font-size: 17px;}
+      .jumbotron { 
+        margin-bottom: 0px;
+        /*
+        text-shadow: 2px 2px 1px #999999;
+        */
+        height:500px;
+        color: #fff; 
+        background:url(https://www.tokyuhotels.co.jp/ja/ch_pg_bridge/1416062353940/main_image1/592/553/kagashima1,0.jpg) center no-repeat; 
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+      }
+      .jumbotron:before{
+        content: '';
+        background: inherit;/*.bgImageで設定した背景画像を継承する*/
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        position: absolute;
+        /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;/*重なり順序を一番下にしておく*/
+      }
+      #section1 {padding-top:0px;height:500px;color: #fff; background-color: #1E88E5;}
+      #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+      #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+      #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+      #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+    </style>
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="title-rect-white.png" style="height:30px; margin-top:-5px;">
+        <!-- <strong>
+          <center>
+            ココカラカイギ
+          </center>
+        </strong> -->
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <div style="margin-left:50px; margin-top:80px;">
+      <h1>ココカラカイギ</h1>
+      <span class="text">自分たちのやりたいことを</span>
+      <span class="text">自分たちの力でつくりだそう</span>
+    </div>
+    <center>
+      <a class="btn btn-danger btn-lg" style="margin-top: 120px; padding:10px 100px 10px 100px;border-radius: 100px;" href="#" role="button">参加する</a>
+    </center>
+  </div>
+</div>
+
+<div id="section1" class="container-fluid">
+  <center>
+    <h1 style="margin-top:50px;">何をするか</h1>
+    <blockquote>
+      <p>未来について考える</p>
+    </blockquote>
+  </center>
+
+  <center>
+    <h1 style="margin-top:50px;">具体的な内容</h1>
+    <blockquote>
+      <p>日程（プログラム)</p>
+    </blockquote>
+  </center>
+
+  <center>
+    <h1 style="margin-top:50px;">場所と詳細日時</h1>
+    <blockquote>
+      <p>頴娃町</p>
+    </blockquote>
+  </center>
+
+
+</div>
+<div id="section2" class="container-fluid">
+  <center>
+    <h1 style="margin-top:50px;">運営メンバー</h1>
+  </center>
+  <div  style="margin-top:50px;" class="row">
+    <div class="col-md-4">
+      <div class="media">
+        <div class="media-left">
+          <img src="http://bootstrap.hana87.club/avatar1.png" class="media-object img-circle" style="width:100px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">山田太郎</h4>
+          <p>私の名前は山田太郎です。架空の人物の名前によく使われます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="media">
+        <div class="media-left">
+          <img src="http://bootstrap.hana87.club/avatar1.png" class="media-object img-circle" style="width:100px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">山田太郎</h4>
+          <p>私の名前は山田太郎です。架空の人物の名前によく使われます。</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="media">
+        <div class="media-left">
+          <img src="http://bootstrap.hana87.club/avatar1.png" class="media-object img-circle" style="width:100px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">山田太郎</h4>
+          <p>私の名前は山田太郎です。架空の人物の名前によく使われます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <center>
+    <h1 style="margin-top:50px;">お問い合わせ</h1>
+  </center>
+</div>
+ 
+</body>
+</html>
