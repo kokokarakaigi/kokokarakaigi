@@ -5,127 +5,149 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-      @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-      body {
-          position: relative;
-          font-family: 'Noto Sans Japanese', sans-serif;
-          font-weight: 100;
-      }
-      .icon-bar {background-color: #1E88E5}
-      .navbar {margin-bottom: 0px;}
-      .text { display: inline-block; font-size: 17px;}
-      .jumbotron { 
-        margin-bottom: 0px;
-        /*
-        text-shadow: 2px 2px 1px #999999;
-        */
-        height:500px;
-        color: #fff; 
-        background:url(https://www.tokyuhotels.co.jp/ja/ch_pg_bridge/1416062353940/main_image1/592/553/kagashima1,0.jpg) center no-repeat; 
-        background-size: cover;
-        position: relative;
-        z-index: 0;
-        overflow: hidden;
-      }
-      .jumbotron:before{
-        content: '';
-        background: inherit;/*.bgImageで設定した背景画像を継承する*/
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(5px);
-        position: absolute;
-        /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-        top: -5px;
-        left: -5px;
-        right: -5px;
-        bottom: -5px;
-        z-index: -1;/*重なり順序を一番下にしておく*/
-      }
-      #section1 {padding-top:0px;height:500px;color: #fff; background-color: #1E88E5;}
-      #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-      #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-      #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-      #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-    </style>
+  <script type="text/javascript">
+    $(function(){
+      $("#top-container").css('visibility','hidden');
+      $("#top-container").addClass("fadeInDown");
+      $('.container-fluid').css('visibility','hidden');
+      $(window).scroll(function(){
+        var windowHeight = $(window).height(),
+            topWindow = $(window).scrollTop();
+        $('.container-fluid').each(function(){
+          var targetPosition = $(this).offset().top;
+          if(topWindow > targetPosition - windowHeight + 100){
+          $(this).addClass("fadeInDown");
+          }
+        });
+      });
+      $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+      $('a[href^="#"]').click(function(){
+        var offsetY = -10;
+        var time = 500;
+        var target = $(this.hash);
+        if (!target.length) return ;
+        var targetY = target.offset().top+offsetY;
+        $('html,body').animate({scrollTop: targetY}, time, 'swing');
+        window.history.pushState(null, null, this.hash);
+        return false;
+      });
+    });
+  </script>
 </head>
 
 <body>
-<nav class="navbar">
-  <div class="container-fluid">
+<nav class="navbar navbar-fixed-top">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <img src="title-rect-white.png" style="height:30px; margin-top:-5px;">
-        <!-- <strong>
-          <center>
-            ココカラカイギ
-          </center>
-        </strong> -->
+      <a class="navbar-brand" href="#home">
+        <img src="title-font-white.png" style="height:30px; margin-top:-5px;">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li class="active"><a href="#about">About</a></li>
+        <li><a href="#field">Field</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#aboutus">AboutUs</a></li>
+        <li><a href="#access">Access</a></li>
+        <li><a href="#info">Info</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron">
-  <div class="container">
+<div id="home" class="jumbotron">
+  <div id="top-container" class="container">
     <div style="margin-left:50px; margin-top:80px;">
-      <h1>ココカラカイギ</h1>
-      <span class="text">自分たちのやりたいことを</span>
-      <span class="text">自分たちの力でつくりだそう</span>
+      <!-- <h1>ココカラカイギ</h1> -->
     </div>
     <center>
-      <a class="btn btn-danger btn-lg" style="margin-top: 120px; padding:10px 100px 10px 100px;border-radius: 100px;" href="#" role="button">参加する</a>
+      <span class="text">すべてのハードルを下げよう</span>
+      <img src="title-square.png" class="media-object" style="width:200px">
+      <br><br>
+      <span class="text">2018.05.04 fri - 2018.05.05 sat</span>
+    </center>
+    <center>
+      <a class="btn btn-danger btn-lg" style="margin-top:40px; margin-bottom:40px; padding:10px 20px 10px 20px;border-radius: 2px;" href="#" role="button">お申込みはこちら</a>
     </center>
   </div>
 </div>
 
-<div id="section1" class="container-fluid">
+<div class="container">
+<div id="about" class="container-fluid">
   <center>
-    <h1 style="margin-top:50px;">何をするか</h1>
-    <blockquote>
-      <p>未来について考える</p>
-    </blockquote>
+    <h1 style="margin-top:50px;">About</h1>
+    <br>
   </center>
-
-  <center>
-    <h1 style="margin-top:50px;">具体的な内容</h1>
-    <blockquote>
-      <p>日程（プログラム)</p>
-    </blockquote>
-  </center>
-
-  <center>
-    <h1 style="margin-top:50px;">場所と詳細日時</h1>
-    <blockquote>
-      <p>頴娃町</p>
-    </blockquote>
-  </center>
-
-
+  <div class="row">
+    <div class="col-sm-6">
+      <p>わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明</p>
+    </div>
+    <div class="col-sm-6">
+      <center>
+      <img src="fune.png" class="media-object" style="width:100%">
+      </center>
+    </div>
+  </div>
 </div>
-<div id="section2" class="container-fluid">
+
+<div id="field" class="container-fluid">
   <center>
-    <h1 style="margin-top:50px;">運営メンバー</h1>
+    <h1 style="margin-top:50px;">Field</h1>
+    <br>
+  </center>
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6">
+      <p>頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所</p>
+    </div>
+    <div class="col-sm-6 col-sm-pull-6">
+      <center>
+      <img src="fune.png" class="media-object" style="width:100%">
+      </center>
+    </div>
+  </div>
+</div>
+
+<div id="schedule" class="container-fluid">
+  <center>
+    <h1 style="margin-top:50px;">Schedule</h1>
+    <br>
+  </center>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-2">
+      <p><strong>Day1</strong></p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <p><strong>Day2</strong></p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+      <p>すごいコンテンツ</p>
+    </div>
+</div>
+
+<div id="aboutus" class="container-fluid">
+  <center>
+    <h1 style="margin-top:50px;">AboutUs</h1>
+    <p>すごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチーム</p>
   </center>
   <div  style="margin-top:50px;" class="row">
     <div class="col-md-4">
@@ -162,10 +184,40 @@
       </div>
     </div>
   </div>
+</div>
+
+<div id="access" class="container-fluid">
   <center>
-    <h1 style="margin-top:50px;">お問い合わせ</h1>
+    <h1 style="margin-top:50px;">Access</h1>
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7488214467253!2d130.4432686796751!3d31.255375981548767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353dd98948ca8c8d%3A0x9651e7252025a322!2z5aGp44KE44CB!5e0!3m2!1sja!2sjp!4v1518451515286" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </center>
 </div>
  
+<div id="contact" class="container-fluid">
+  <center>
+    <h1 style="margin-top:50px;">Contact</h1>
+    <p>メール</p>
+    <p>Twitter</p>
+    <p>Facebook</p>
+  </center>
+</div>
+
+<center>
+  <a class="btn btn-danger btn-lg" style="margin-top:40px; margin-bottom:40px; padding:10px 20px 10px 20px;border-radius: 2px;" href="#" role="button">お申込みはこちら</a>
+</center>
+
+<div id="sponcer" class="container-fluid">
+  <center>
+    <h1 style="margin-top:50px;">Sponcer</h1>
+    <p>協賛企業</p>
+    <img src="https://tctechcrunch2011.files.wordpress.com/2015/09/googlelogo_color_300x104dp.png?w=600&h=208" class="media-object" style="width:200px">
+    <img src="http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg" class="media-object" style="width:200px">
+    <br>
+  </center>
+</div>
+
+</div>
 </body>
 </html>

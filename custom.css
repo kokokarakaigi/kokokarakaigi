@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+:root {
+  --main-bg-color: rgb(104, 26, 26);
+}
+body {
+  position: relative;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-weight: 100;
+  background-color: white;
+  transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+}
+.icon-bar {
+  background-color: var(--main-bg-color);
+}
+.navbar {
+  margin-bottom: 0px;
+}
+a, p, h1, h2, h3, h4{ 
+  color: var(--main-bg-color);
+}
+blockquote{ 
+  color: var(--main-bg-color);
+  border-left: 5px solid var(--main-bg-color);
+}
+.text { 
+  display: inline-block; font-size: 17px;
+  color: var(--main-bg-color);
+}
+.jumbotron { 
+  margin-bottom: 0px;
+  /*
+  text-shadow: 2px 2px 1px #999999;
+  height:500px;
+  */
+  color: var(--main-bg-color);
+  background:url(https://blogimg.goo.ne.jp/user_image/72/8d/e9c55bea68ff5550e766aed2ef7b3ca7.jpg) center no-repeat; 
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.jumbotron:before{
+  content: '';
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
+}
+.navbar{
+  background-color: white;
+}
+/*
+#about {background-color: #fff; }
+#section2 {padding-top:50px;height:500px;color: #fff;}
+*/
+.fadeInDown {
+  -webkit-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:1s;
+  -ms-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+  0% { opacity: 0; -webkit-transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+.google-map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
