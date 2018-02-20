@@ -4,219 +4,182 @@
   <title>ココカラカイギ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="custom.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    $(function(){
-      $("#top-container").css('visibility','hidden');
-      $("#top-container").addClass("fadeInDown");
-      $('.container-fluid').css('visibility','hidden');
-      $(window).scroll(function(){
-        var windowHeight = $(window).height(),
-            topWindow = $(window).scrollTop();
-        $('.container-fluid').each(function(){
-          var targetPosition = $(this).offset().top;
-          if(topWindow > targetPosition - windowHeight + 100){
-          $(this).addClass("fadeInDown");
-          }
-        });
-      });
-      $(".navbar-nav li a").click(function(event) {
-        $(".navbar-collapse").collapse('hide');
-      });
-      $('a[href^="#"]').click(function(){
-        var offsetY = -10;
-        var time = 500;
-        var target = $(this.hash);
-        if (!target.length) return ;
-        var targetY = target.offset().top+offsetY;
-        $('html,body').animate({scrollTop: targetY}, time, 'swing');
-        window.history.pushState(null, null, this.hash);
-        return false;
-      });
-    });
-  </script>
+  <script src="index.js"> </script>
 </head>
 
 <body>
-<nav class="navbar navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#home">
-        <img src="title-font-white.png" style="height:30px; margin-top:-5px;">
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#about">About</a></li>
-        <li><a href="#field">Field</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#aboutus">AboutUs</a></li>
-        <li><a href="#access">Access</a></li>
-        <li><a href="#info">Info</a></li>
-      </ul>
-    </div>
+<!-- header -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#home">
+    <img src="images/title-font-white.png" style="height: 140px; margin-top: -60px; margin-left: -22px; margin-bottom: -65px;">
+  </a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="Navber">
+    <ul class="navbar-nav mr-auto navbar-right">
+
+      <li class="nav-item"><a class="nav-link" href="#message">MESSAGE</a></li>
+      <li class="nav-item"><a class="nav-link" href="#project">PROJECT</a></li>
+      <li class="nav-item"><a class="nav-link" href="#field">FIELD</a></li>
+      <li class="nav-item"><a class="nav-link" href="#schedule">TIME TABLE</a></li>
+      <li class="nav-item"><a class="nav-link" href="#aboutus">ABOUT US</a></li>
+      <li class="nav-item"><a class="nav-link" href="#access">ACCESS</a></li>
+      <li class="nav-item"><a class="nav-link" href="#info">INFORMATION</a></li>
+    </ul>
   </div>
 </nav>
 
+<!-- top-logo -->
 <div id="home" class="jumbotron">
   <div id="top-container" class="container">
-    <div style="margin-left:50px; margin-top:80px;">
-      <!-- <h1>ココカラカイギ</h1> -->
-    </div>
     <center>
-      <span class="text">すべてのハードルを下げよう</span>
-      <img src="title-square.png" class="media-object" style="width:200px">
+      <img src="images/title-square.png" class="media-object" style="width:200px; margin-top: 75px;">
       <br><br>
-      <span class="text">2018.05.04 fri - 2018.05.05 sat</span>
-    </center>
-    <center>
-      <a class="btn btn-danger btn-lg" style="margin-top:40px; margin-bottom:40px; padding:10px 20px 10px 20px;border-radius: 2px;" href="#" role="button">お申込みはこちら</a>
     </center>
   </div>
 </div>
 
+<!-- content -->
 <div class="container">
-<div id="about" class="container-fluid">
-  <center>
-    <h1 style="margin-top:50px;">About</h1>
+  <center style="margin-top:50px;">
+    <img src="images/dates.png" class="media-object" style="width:80%">
     <br>
+    <a class="btn btn-outline-danger btn-lg entry-btn" style="margin-top:40px; margin-bottom:40px;"
+      href="https://docs.google.com/forms/d/1co6ScjrLCxKPrAo2nsvqHt2dr3ncdT0EiV6gdC-OCE8/edit?usp=sharing#" role="button">お申込みはこちら</a>
   </center>
-  <div class="row">
-    <div class="col-sm-6">
-      <p>わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明</p>
-    </div>
-    <div class="col-sm-6">
-      <center>
-      <img src="fune.png" class="media-object" style="width:100%">
-      </center>
-    </div>
-  </div>
-</div>
 
-<div id="field" class="container-fluid">
-  <center>
-    <h1 style="margin-top:50px;">Field</h1>
-    <br>
-  </center>
-  <div class="row">
-    <div class="col-sm-6 col-sm-push-6">
-      <p>頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所</p>
-    </div>
-    <div class="col-sm-6 col-sm-pull-6">
-      <center>
-      <img src="fune.png" class="media-object" style="width:100%">
-      </center>
-    </div>
-  </div>
-</div>
-
-<div id="schedule" class="container-fluid">
-  <center>
-    <h1 style="margin-top:50px;">Schedule</h1>
-    <br>
-  </center>
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-2">
-      <p><strong>Day1</strong></p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
+  <div id="message" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">MESSAGE</h2>
       <br>
-    </div>
-    <div class="col-sm-4">
-      <p><strong>Day2</strong></p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-      <p>すごいコンテンツ</p>
-    </div>
-</div>
-
-<div id="aboutus" class="container-fluid">
-  <center>
-    <h1 style="margin-top:50px;">AboutUs</h1>
-    <p>すごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチーム</p>
-  </center>
-  <div  style="margin-top:50px;" class="row">
-    <div class="col-md-4">
-      <div class="media">
-        <div class="media-left">
-          <img src="http://bootstrap.hana87.club/avatar1.png" class="media-object img-circle" style="width:100px">
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">山田太郎</h4>
-          <p>私の名前は山田太郎です。架空の人物の名前によく使われます。</p>
-        </div>
+    </center>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明</p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="media">
-        <div class="media-left">
-          <img src="http://bootstrap.hana87.club/avatar1.png" class="media-object img-circle" style="width:100px">
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">山田太郎</h4>
-          <p>私の名前は山田太郎です。架空の人物の名前によく使われます。</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="media">
-        <div class="media-left">
-          <img src="http://bootstrap.hana87.club/avatar1.png" class="media-object img-circle" style="width:100px">
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading">山田太郎</h4>
-          <p>私の名前は山田太郎です。架空の人物の名前によく使われます。</p>
-        </div>
+      <div class="col-sm-6">
+        <center>
+        <img src="images/fune.png" class="media-object" style="width:100%">
+        </center>
       </div>
     </div>
   </div>
-</div>
 
-<div id="access" class="container-fluid">
-  <center>
-    <h1 style="margin-top:50px;">Access</h1>
-    <div class="google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7488214467253!2d130.4432686796751!3d31.255375981548767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353dd98948ca8c8d%3A0x9651e7252025a322!2z5aGp44KE44CB!5e0!3m2!1sja!2sjp!4v1518451515286" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <div id="project" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">PROJECT</h2>
+      <br>
+    </center>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明わかりやすい説明</p>
+      </div>
+      <div class="col-sm-6">
+        <center>
+        <img src="images/fune.png" class="media-object" style="width:100%">
+        </center>
+      </div>
     </div>
-  </center>
-</div>
- 
-<div id="contact" class="container-fluid">
-  <center>
-    <h1 style="margin-top:50px;">Contact</h1>
-    <p>メール</p>
-    <p>Twitter</p>
-    <p>Facebook</p>
-  </center>
-</div>
+  </div>
 
-<center>
-  <a class="btn btn-danger btn-lg" style="margin-top:40px; margin-bottom:40px; padding:10px 20px 10px 20px;border-radius: 2px;" href="#" role="button">お申込みはこちら</a>
-</center>
+  <div id="field" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">FIELD</h2>
+      <br>
+    </center>
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-6">
+        <p>頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所頴娃町はすごくいい所</p>
+      </div>
+      <div class="col-sm-6 col-sm-pull-6">
+        <center>
+        <img src="images/fune.png" class="media-object" style="width:100%">
+        </center>
+      </div>
+    </div>
+  </div>
 
-<div id="sponcer" class="container-fluid">
+  <div id="schedule" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">SCHEDULE</h2>
+      <br>
+    </center>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-2">
+        <p><strong>Day1</strong></p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <br>
+      </div>
+      <div class="col-sm-4">
+        <p><strong>Day2</strong></p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+        <p>すごいコンテンツ</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="aboutus" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">ABOUT US</h2>
+      <p>すごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチーム</p>
+    </center>
+    <div id="member-list" class="row" style="margin-top:50px;">
+    </div>
+  </div>
+
+  <div id="access" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">ACCESS</h2>
+      <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7488214467253!2d130.4432686796751!3d31.255375981548767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353dd98948ca8c8d%3A0x9651e7252025a322!2z5aGp44KE44CB!5e0!3m2!1sja!2sjp!4v1518451515286" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </center>
+  </div>
+  
+  <div id="info" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">INFORMATION</h2>
+      <p>メール</p>
+      <p>Twitter</p>
+      <p>Facebook</p>
+    </center>
+  </div>
+
   <center>
-    <h1 style="margin-top:50px;">Sponcer</h1>
-    <p>協賛企業</p>
-    <img src="https://tctechcrunch2011.files.wordpress.com/2015/09/googlelogo_color_300x104dp.png?w=600&h=208" class="media-object" style="width:200px">
-    <img src="http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg" class="media-object" style="width:200px">
-    <br>
+    <a class="btn btn-danger btn-lg" style="margin-top:40px; margin-bottom:40px; padding:10px 20px 10px 20px;border-radius: 2px;" href="https://docs.google.com/forms/d/1co6ScjrLCxKPrAo2nsvqHt2dr3ncdT0EiV6gdC-OCE8/edit?usp=sharing#" role="button">お申込みはこちら</a>
   </center>
-</div>
+
+  <div id="sponcer" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">SPONCER</h2>
+      <p>協賛企業</p>
+      <img src="https://tctechcrunch2011.files.wordpress.com/2015/09/googlelogo_color_300x104dp.png?w=600&h=208" class="media-object" style="width:200px">
+      <img src="http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg" class="media-object" style="width:200px">
+      <br>
+    </center>
+  </div>
+
+  <div id="follow" class="container-fluid">
+    <center>
+      <h2 style="margin-top:50px;">FOLLOW</h2>
+      <br>
+    </center>
+  </div>
 
 </div>
 </body>

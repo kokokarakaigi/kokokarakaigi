@@ -1,11 +1,11 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 :root {
-  --main-bg-color: rgb(104, 26, 26);
+  --main-bg-color: rgb(70, 35, 10);
+  --accent-color: rgb(220, 180, 40);
 }
 body {
   position: relative;
   font-family: 'Noto Sans Japanese', sans-serif;
-  font-weight: 100;
   background-color: white;
   transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
@@ -18,7 +18,15 @@ body {
 .navbar {
   margin-bottom: 0px;
 }
-a, p, h1, h2, h3, h4{ 
+h2 {
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--accent-color);
+}
+h1, h3, h4{ 
+  color: var(--accent-color);
+}
+a, p, { 
   color: var(--main-bg-color);
 }
 blockquote{ 
@@ -31,12 +39,9 @@ blockquote{
 }
 .jumbotron { 
   margin-bottom: 0px;
-  /*
-  text-shadow: 2px 2px 1px #999999;
-  height:500px;
-  */
   color: var(--main-bg-color);
-  background:url(https://blogimg.goo.ne.jp/user_image/72/8d/e9c55bea68ff5550e766aed2ef7b3ca7.jpg) center no-repeat; 
+  /* background:url(https://blogimg.goo.ne.jp/user_image/72/8d/e9c55bea68ff5550e766aed2ef7b3ca7.jpg) center no-repeat;  */
+  background-color: var(--accent-color);
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -59,7 +64,18 @@ blockquote{
   z-index: -1;/*重なり順序を一番下にしておく*/
 }
 .navbar{
-  background-color: white;
+  background-color: white !important;
+}
+.navbar-light .navbar-toggler {
+  color: var(--main-bg-color);
+  border-color: rgba(0,0,0,0);
+}
+.entry-btn {
+  color: var(--main-bg-color);
+  border-color: var(--main-bg-color);
+  padding: 10px 20px 10px 20px;
+  border-radius: 1px;
+  border-width: 3px;
 }
 /*
 #about {background-color: #fff; }
