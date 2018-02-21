@@ -65,6 +65,12 @@ $(function(){
   });
   
   //add sponcer function
+  let big_sponcer_list = [
+    {name:"Google", img:"https://tctechcrunch2011.files.wordpress.com/2015/09/googlelogo_color_300x104dp.png?w=600&h=208"},
+    {name:"Micros", img:"http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg"},
+    {name:"Google", img:"https://tctechcrunch2011.files.wordpress.com/2015/09/googlelogo_color_300x104dp.png?w=600&h=208"},
+    {name:"Micros", img:"http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg"},
+  ];
   let sponcer_list = [
     {name:"Google", img:"https://tctechcrunch2011.files.wordpress.com/2015/09/googlelogo_color_300x104dp.png?w=600&h=208"},
     {name:"Micros", img:"http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg"},
@@ -73,9 +79,17 @@ $(function(){
     {name:"Micros", img:"http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg"},
     {name:"Micros", img:"http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg"},
   ];
+  $.each(big_sponcer_list,function(i,v){
+    $("#big-sponcer-list").append("\
+    <div class='col-12 col-md-6' style='margin-bottom: 15px;'> \
+      <center style='max-width:330px;border:1px var(--main-bg-color) solid; width:100%; padding:2px 2px 2px 2px ;display: table-cell; vertical-align: middle;'>\
+        <img src='"+v.img+"' style='width:90%;'> \
+      </center> \
+    </div><br>");
+  });
   $.each(sponcer_list,function(i,v){
     $("#sponcer-list").append("\
-    <div class='col-4 col-md-3 col-lg-2' style='margin-bottom: 15px;'> \
+    <div class='col-4 col-md-2 col-lg-2' style='margin-bottom: 15px;'> \
     <center style='border:1px var(--main-bg-color) solid; width:80px; height:80px; padding:2px 2px 2px 2px ;display: table-cell; vertical-align: middle;'>\
     <img src='"+v.img+"' style='width:90%;'> \
     </center> </div><br>");

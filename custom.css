@@ -145,12 +145,12 @@ blockquote{
   -webkit-animation: pop ease-out 2s forwards; 
   animation: pop ease-out 2s forwards; 
 }
-.b{animation-delay: 0.1s}
+.b{animation-delay: 0.0s}
 .r{animation-delay: 0.2s}
-.m{animation-delay: 0.3s}
-.l{animation-delay: 0.4s}
-.t{animation-delay: 0.5s}
-.title{animation-delay: 1.2s}
+.l{animation-delay: 0.2s}
+.m{animation-delay: 0.4s}
+.t{animation-delay: 0.8s}
+.title{animation-delay: 1.4s}
 @keyframes pop {
   from,
   60%,
