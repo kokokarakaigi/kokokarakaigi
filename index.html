@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="custom.css">
   <script src="index.js"> </script>
 </head>
@@ -16,22 +17,22 @@
 <!-- header -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#home">
-    <img src="images/title-font-white.png" style="height: 140px; margin-top: -60px; margin-left: -22px; margin-bottom: -65px;">
+    <img src="images/header_logo.png" style="height: 30px;margin-top: -5px; padding-left: 17px;">
   </a>
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="Navber">
-    <ul class="navbar-nav mr-auto navbar-right">
+    <ul class="navbar-nav" style="margin-left: 17px;">
 
-      <li class="nav-item"><a class="nav-link" href="#message">MESSAGE</a></li>
-      <li class="nav-item"><a class="nav-link" href="#project">PROJECT</a></li>
-      <li class="nav-item"><a class="nav-link" href="#field">FIELD</a></li>
-      <li class="nav-item"><a class="nav-link" href="#schedule">TIME TABLE</a></li>
-      <li class="nav-item"><a class="nav-link" href="#aboutus">ABOUT US</a></li>
-      <li class="nav-item"><a class="nav-link" href="#access">ACCESS</a></li>
-      <li class="nav-item"><a class="nav-link" href="#info">INFORMATION</a></li>
+      <li class="nav-item" style="padding-right: 10px;"><a class="nav-link" href="#message">MESSAGE</a></li>
+      <li class="nav-item" style="padding-right: 10px;"><a class="nav-link" href="#project">PROJECT</a></li>
+      <li class="nav-item" style="padding-right: 10px;"><a class="nav-link" href="#field">FIELD</a></li>
+      <li class="nav-item" style="padding-right: 10px;"><a class="nav-link" href="#schedule">TIME TABLE</a></li>
+      <li class="nav-item" style="padding-right: 10px;"><a class="nav-link" href="#aboutus">ABOUT US</a></li>
+      <li class="nav-item" style="padding-right: 10px;"><a class="nav-link" href="#access">ACCESS</a></li>
+      <li class="nav-item" style="padding-right: 10px;"><a class="nav-link" href="#info">INFORMATION</a></li>
     </ul>
   </div>
 </nav>
@@ -40,7 +41,7 @@
 <div id="home" class="jumbotron">
   <div id="top-container" class="container">
     <center>
-      <img src="images/title-square.png" class="media-object" style="width:200px; margin-top: 75px;">
+      <img src="images/main-logo.svg" class="media-object" style="width:200px; margin-top: 75px;">
       <br><br>
     </center>
   </div>
@@ -51,8 +52,8 @@
   <center style="margin-top:50px;">
     <img src="images/dates.png" class="media-object" style="width:80%">
     <br>
-    <a class="btn btn-outline-danger btn-lg entry-btn" style="margin-top:40px; margin-bottom:40px;"
-      href="https://docs.google.com/forms/d/1co6ScjrLCxKPrAo2nsvqHt2dr3ncdT0EiV6gdC-OCE8/edit?usp=sharing#" role="button">お申込みはこちら</a>
+    <a class="btn btn-outline-danger btn-lg entry-btn" style="margin-top:30px; margin-bottom:40px;"
+      href="https://docs.google.com/forms/d/1co6ScjrLCxKPrAo2nsvqHt2dr3ncdT0EiV6gdC-OCE8/edit?usp=sharing#" role="button">お申込みはこちら  <i class="fa fa-lg fa-caret-right"></i></a>
   </center>
 
   <div id="message" class="container-fluid">
@@ -108,7 +109,7 @@
 
   <div id="schedule" class="container-fluid">
     <center>
-      <h2 style="margin-top:50px;">SCHEDULE</h2>
+      <h2 style="margin-top:50px;">TIME TABLE</h2>
       <br>
     </center>
     <div class="row">
@@ -136,15 +137,17 @@
   <div id="aboutus" class="container-fluid">
     <center>
       <h2 style="margin-top:50px;">ABOUT US</h2>
+      <br>
       <p>すごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチームすごくいいチーム</p>
-    </center>
-    <div id="member-list" class="row" style="margin-top:50px;">
+    <div id="member-list" class="row" style="margin-top:40px; margin-left:-25px;">
     </div>
+    </center>
   </div>
 
   <div id="access" class="container-fluid">
     <center>
       <h2 style="margin-top:50px;">ACCESS</h2>
+      <br>
       <div class="google-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7488214467253!2d130.4432686796751!3d31.255375981548767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353dd98948ca8c8d%3A0x9651e7252025a322!2z5aGp44KE44CB!5e0!3m2!1sja!2sjp!4v1518451515286" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
@@ -154,33 +157,60 @@
   <div id="info" class="container-fluid">
     <center>
       <h2 style="margin-top:50px;">INFORMATION</h2>
-      <p>メール</p>
-      <p>Twitter</p>
-      <p>Facebook</p>
+      <br>
+      <p><strong>ココカラカイギ実行委員会</strong></p>
+      <!-- <p>kokokara.kaigi@gmail.com</p> -->
+      <a href="mailto:kokokara.kaigi@gmail.com" class="btn btn-warning social-btn"><i class="fa fa-2x fa-envelope"></i></a>
+      <a href="" class="btn btn-warning social-btn" style="background-color:#1b43b5;"><i class="fa fa-2x fa-facebook"></i></a>
+      <a href="https://twitter.com/kokokara_kaigi" class="btn btn-warning social-btn" style="background-color:#2a8de2;"><i class="fa fa-2x fa-twitter"></i></a>
+      <a href="https://www.instagram.com/kokokara.kaigi/" class="btn btn-warning social-btn" style="background-color:#ca0e6d;"><i class="fa fa-2x fa-instagram"></i></a>
+      <br> <br> <br>
+      <p><strong>CREDIT</strong></p>
+      <div style="display: inline-block;">
+        <p style="text-align: left;">主催・ココカラカイギ実行委員会 <br>
+          特別協力・NPO法人頴娃おこそ会<br>
+          協賛・<br>
+          協力・<br>
+          後援・</p>
+      </div>
     </center>
   </div>
-
-  <center>
-    <a class="btn btn-danger btn-lg" style="margin-top:40px; margin-bottom:40px; padding:10px 20px 10px 20px;border-radius: 2px;" href="https://docs.google.com/forms/d/1co6ScjrLCxKPrAo2nsvqHt2dr3ncdT0EiV6gdC-OCE8/edit?usp=sharing#" role="button">お申込みはこちら</a>
-  </center>
 
   <div id="sponcer" class="container-fluid">
     <center>
       <h2 style="margin-top:50px;">SPONCER</h2>
-      <p>協賛企業</p>
-      <img src="https://tctechcrunch2011.files.wordpress.com/2015/09/googlelogo_color_300x104dp.png?w=600&h=208" class="media-object" style="width:200px">
-      <img src="http://www.blogcdn.com/www.engadget.com/media/2012/08/microsoft-new-logo-2012.jpg" class="media-object" style="width:200px">
+      <br>
+      <div id="sponcer-list" class="row" style="margin-left:-25px;padding-left: 15px;padding-right: 15px;">
+      </div>
       <br>
     </center>
   </div>
 
-  <div id="follow" class="container-fluid">
+  <!-- <div id="follow" class="container-fluid">
     <center>
       <h2 style="margin-top:50px;">FOLLOW</h2>
       <br>
     </center>
-  </div>
+  </div> -->
+
+  <center>
+    <a class="btn btn-danger btn-lg" 
+    style="margin-top:20px; 
+    margin-bottom:80px; 
+    padding:10px 20px 10px 20px;border-radius: 2px; height: 50px;
+    width: 220px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.15em;" href="https://docs.google.com/forms/d/1co6ScjrLCxKPrAo2nsvqHt2dr3ncdT0EiV6gdC-OCE8/edit?usp=sharing#" role="button">お申込みはこちら  <i class="fa fa-lg fa-caret-right"></i></a>
+  </center>
+
+  <footer>
+    <center>
+      <p style="font-size:10px;">主催・ココカラカイギ実行委員会 特別協力・NPO法人頴娃おこそ会</p>
+    </center>
+  </footer>
 
 </div>
+
 </body>
 </html>
