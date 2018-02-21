@@ -1,6 +1,6 @@
 $(function(){
-  $("#top-container").css('visibility','hidden');
-  $("#top-container").addClass("fadeInDown");
+  // $("#top-container").css('visibility','hidden');
+  // $("#top-container").addClass("fadeInDown");
   $('.container-fluid').css('visibility','hidden');
 
   $(".img-modal").click(function(){
