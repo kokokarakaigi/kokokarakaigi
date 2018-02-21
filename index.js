@@ -3,6 +3,18 @@ $(function(){
   $("#top-container").addClass("fadeInDown");
   $('.container-fluid').css('visibility','hidden');
 
+  $(".img-modal").click(function(){
+    var src = $(this).attr("src");
+    $("#image_myModal").html("\
+      <div class='modal-dialog modal-dialog-centered'>\
+        <div class='modal-body'>\
+          <img style='text-align:center; width:100%;' src='"+src+"'>\
+        </div>\
+      </div>\
+    ");
+    $("#image_myModal").modal('show');
+  });
+  
   $(window).scroll(function(){
     var windowHeight = $(window).height(),
         topWindow = $(window).scrollTop();
@@ -19,7 +31,7 @@ $(function(){
   });
 
   $('a[href^="#"]').click(function(){
-    var offsetY = -55;
+    var offsetY = -65;
     var time = 500;
     var target = $(this.hash);
     if (!target.length) return ;

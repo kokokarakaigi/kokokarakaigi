@@ -15,6 +15,7 @@ body {
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
+    margin-top: -25px;
     display: -webkit-box!important;
     display: -ms-flexbox!important;
     display: flex!important;
@@ -35,7 +36,12 @@ h2 {
   letter-spacing: 0.15em;
   color: var(--accent-color);
 }
-h1, h3, h4{ 
+h3 {
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--main-bg-color);
+}
+h1, h4{ 
   color: var(--accent-color);
 }
 a, p, { 
