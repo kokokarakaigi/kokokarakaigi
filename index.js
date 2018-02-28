@@ -45,7 +45,7 @@ $(function(){
   let member_list = [
     {name:"たかはし くうが", eng:"Kuga Takahashi", img:"avatar.png"},
     {name:"井尻 敬天",      eng:"Yoshitaka Iziri", img:"avatar.png"},
-    {name:"岡元 里桜",      eng:"Taro Yamada", img:"avatar.png"},
+    {name:"岡元 里桜",      eng:"Rio Okamoto", img:"avatar.png"},
     {name:"森下 彩絵",      eng:"Sae Morishita", img:"avatar.png"},
     {name:"寺田 麗々蘭",    eng:"Ririka Terada", img:"avatar.png"},
     {name:"長谷川 天音",    eng:"Amane Hasegawa", img:"avatar.png"},

@@ -151,6 +151,7 @@ blockquote{
 .m{animation-delay: 0.4s}
 .t{animation-delay: 0.8s}
 .title{animation-delay: 1.4s}
+.subtitle{animation-delay: 1.4s}
 @keyframes pop {
   from,
   60%,
