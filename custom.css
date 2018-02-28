@@ -47,6 +47,12 @@ h1, h4{
 a, p, { 
   color: var(--main-bg-color);
 }
+.content-text { 
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+}
 .navbar-light .navbar-nav .nav-link {
   color: var(--main-bg-color);
   letter-spacing: 0.15em;
