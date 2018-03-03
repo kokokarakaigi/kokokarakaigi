@@ -43,18 +43,18 @@ $(function(){
 
   //add member function
   let member_list = [
-    {name:"たかはし くうが", eng:"Kuga Takahashi", img:"avatar.png"},
-    {name:"井尻 敬天",      eng:"Yoshitaka Iziri", img:"avatar.png"},
-    {name:"岡元 里桜",      eng:"Rio Okamoto", img:"avatar.png"},
+    {name:"たかはし くうが", eng:"Kuga Takahashi", img:"kuga.jpg"},
+    {name:"井尻 敬天",      eng:"Yoshitaka Iziri", img:"yoshi.jpg"},
+    {name:"岡元 里桜",      eng:"Rio Okamoto", img:"rio.jpg"},
     {name:"森下 彩絵",      eng:"Sae Morishita", img:"avatar.png"},
-    {name:"寺田 麗々蘭",    eng:"Ririka Terada", img:"avatar.png"},
-    {name:"長谷川 天音",    eng:"Amane Hasegawa", img:"avatar.png"},
-    {name:"松吉 みさと",    eng:"Misato Matsuyoshi", img:"avatar.png"},
-    {name:"高橋 愛梨",      eng:"Airi Takahashi", img:"avatar.png"},
+    {name:"寺田 麗々蘭",    eng:"Ririka Terada", img:"riri.jpg"},
+    {name:"長谷川 天音",    eng:"Amane Hasegawa", img:"ama.jpg"},
+    {name:"松吉 みさと",    eng:"Misato Matsuyoshi", img:"chos.jpg"},
+    {name:"高橋 愛梨",      eng:"Airi Takahashi", img:"airi.jpg"},
     {name:"松尾 智博",      eng:"Tomohiro Matsuo", img:"avatar.png"},
-    {name:"盛田 彩乃",      eng:"Ayano Morita", img:"avatar.png"},
-    {name:"高野 愛佳",      eng:"Aika Takano", img:"avatar.png"},
-    {name:"草留 早紀子",    eng:"Sakiko Kusadome", img:"avatar.png"},
+    {name:"盛田 彩乃",      eng:"Ayano Morita", img:"ayano.jpg"},
+    {name:"高野 愛佳",      eng:"Aika Takano", img:"kano.jpg"},
+    {name:"草留 早紀子",    eng:"Sakiko Kusadome", img:"sakko.jpg"},
   ];
   $.each(member_list,function(i,v){
     $("#member-list").append("\

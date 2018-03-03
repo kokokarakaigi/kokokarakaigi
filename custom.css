@@ -49,17 +49,18 @@ a, p, {
 }
 .content-text { 
   letter-spacing: 0.15em;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 30px;
+  color: var(--main-bg-color);
+}
+.content-center { 
+  text-align: center;
+  margin-left: 15px;
 }
 .navbar-light .navbar-nav .nav-link {
   color: var(--main-bg-color);
   letter-spacing: 0.15em;
-}
-blockquote{ 
-  color: var(--main-bg-color);
-  border-left: 5px solid var(--main-bg-color);
 }
 .text { 
   display: inline-block; font-size: 17px;
@@ -68,29 +69,30 @@ blockquote{
 .jumbotron { 
   margin-bottom: 0px;
   color: var(--main-bg-color);
-  /* background:url(https://blogimg.goo.ne.jp/user_image/72/8d/e9c55bea68ff5550e766aed2ef7b3ca7.jpg) center no-repeat;  */
-  background-color: var(--accent-color);
+  background:url(./images/header-bg.jpg) center no-repeat; 
+  -moz-background-size:cover;
+  background-size:cover;
+  /* background-color: var(--accent-color);
   background-size: cover;
   position: relative;
   z-index: 0;
-  overflow: hidden;
+  overflow: hidden; */
 }
-.jumbotron:before{
+/* .jumbotron:before{
   content: '';
-  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  background: inherit;
+  position: absolute;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-  position: absolute;
-  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
   top: -5px;
   left: -5px;
   right: -5px;
   bottom: -5px;
-  z-index: -1;/*重なり順序を一番下にしておく*/
-}
+  z-index: -1;
+} */
 .navbar{
   background-color: white !important;
 }
@@ -210,4 +212,11 @@ blockquote{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.message-bg {
+  width: 100%;
+  position: relative;
+  top: -70px;
+  z-index: -1;
 }
