@@ -262,7 +262,7 @@ a, p, {
   background-position-y: 100%;
 }
 #project-left {
-  background:url(./images/project-box.svg) center no-repeat/80%; 
+  background:url(./images/box-project.svg) center no-repeat/80%; 
   background-position-x: 130%;
   background-position-y: 20px;
 }
