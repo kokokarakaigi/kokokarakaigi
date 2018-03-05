@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url(./fonts/NotoSans_medium.woff) format('woff'),
+       url(./fonts/NotoSans_medium.otf)  format('opentype');
+}
 :root {
   --main-bg-color: rgb(70, 35, 10);
   --accent-color: rgb(220, 180, 40);
