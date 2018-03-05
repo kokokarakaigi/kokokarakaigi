@@ -72,56 +72,6 @@ body {
   100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }
 
-.cls-1 {
-  opacity: 0;
-  -webkit-animation: pop ease-out 2s forwards; 
-  animation: pop ease-out 2s forwards; 
-}
-.b{animation-delay: 0.0s}
-.r{animation-delay: 0.2s}
-.l{animation-delay: 0.2s}
-.m{animation-delay: 0.4s}
-.t{animation-delay: 0.8s}
-.title{animation-delay: 1.4s}
-.subtitle{animation-delay: 1.4s}
-@keyframes pop {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 /* custom class */
 h2 {
@@ -265,4 +215,24 @@ a, p, {
   background:url(./images/box-project.svg) center no-repeat/80%; 
   background-position-x: 130%;
   background-position-y: 20px;
+}
+#field-right {
+  background:url(./images/box-field.svg) center no-repeat/97%; 
+  background-position-x: 150px;
+  background-position-y: 20px;
+}
+#timetable-left {
+  background:url(./images/box-timetable.svg) center no-repeat/25%; 
+  background-position-x: 100%;
+  background-position-y: 0px;
+}
+#aboutus-right {
+  background:url(./images/box-aboutus.svg) center no-repeat/100%; 
+  background-position-x: 150px;
+  background-position-y: 5px;
+}
+#info {
+  background:url(./images/box-info.svg) center no-repeat/300px; 
+  background-position-x: center;
+  background-position-y: 10px;
 }

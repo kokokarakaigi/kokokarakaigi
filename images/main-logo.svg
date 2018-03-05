@@ -1,6 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.02 415.1">
   <defs>
-    <style>.cls-1{fill:#fff;}</style>
+    <style>
+      .cls-1 {
+        fill:#fff;
+        opacity: 0;
+        -webkit-animation: pop ease-out 500ms forwards; 
+        animation: pop ease-out 500ms forwards; 
+      }
+      .b{animation-delay: 0s}
+      .r{animation-delay: 200ms}
+      .l{animation-delay: 200ms}
+      .m{animation-delay: 400ms}
+      .t{animation-delay: 800ms}
+      .title{animation-delay: 1400ms;}
+      @keyframes pop {
+        from,
+        60%,
+        75%,
+        90%,
+        to {
+          -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        0% {
+          opacity: 0;
+          -webkit-transform: translate3d(0, -3000px, 0);
+          transform: translate3d(0, -3000px, 0);
+        }
+
+        60% {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 25px, 0);
+          transform: translate3d(0, 25px, 0);
+        }
+
+        75% {
+          -webkit-transform: translate3d(0, -10px, 0);
+          transform: translate3d(0, -10px, 0);
+        }
+
+        90% {
+          -webkit-transform: translate3d(0, 5px, 0);
+          transform: translate3d(0, 5px, 0);
+        }
+
+        to {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    </style>
   </defs>
   <g id="layer2" data-name="layer2">
     <g id="layer_1-2" data-name="layer1">
