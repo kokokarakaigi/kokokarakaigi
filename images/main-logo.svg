@@ -4,8 +4,8 @@
       .cls-1 {
         fill:#fff;
         opacity: 0;
-        -webkit-animation: pop ease-out 500ms forwards; 
-        animation: pop ease-out 500ms forwards; 
+        -webkit-animation: pop ease-out 1500ms forwards; 
+        animation: pop ease-out 1500ms forwards; 
       }
       .b{animation-delay: 0s}
       .r{animation-delay: 200ms}

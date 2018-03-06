@@ -187,8 +187,8 @@ a, p, {
 .social-btn {
   width: 60px;
   height: 60px;
-  border-radius: 1px;
-  background-color: #ddb52c;
+  border-radius: 10px;
+  background-color: var(--main-bg-color);
   border-color: rgba(0,0,0,0);
   /* color: #23272b; */
   color: #fff;
