@@ -50,7 +50,7 @@ $(function(){
     {name:"寺田 麗々蘭",    eng:"Ririka Terada", img:"riri.jpg"},
     {name:"長谷川 天音",    eng:"Amane Hasegawa", img:"ama.jpg"},
     {name:"松吉 みさと",    eng:"Misato Matsuyoshi", img:"chos.jpg"},
-    {name:"高橋 愛梨",      eng:"Airi Takahashi", img:"airi.jpg"},
+    {name:"髙橋 愛梨",      eng:"Airi Takahashi", img:"airi.jpg"},
     {name:"松尾 智博",      eng:"Tomohiro Matsuo", img:"matsuo.jpg"},
     {name:"盛田 彩乃",      eng:"Ayano Morita", img:"ayano.jpg"},
     {name:"高野 愛佳",      eng:"Aika Takano", img:"kano.jpg"},
