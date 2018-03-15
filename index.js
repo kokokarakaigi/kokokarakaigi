@@ -3,6 +3,15 @@ $(function(){
   // $("#top-container").addClass("fadeInDown");
   $('.container-fluid').css('visibility','hidden');
 
+  var dt = new Date();
+  var limit1 = new Date("2018/03/24 00:00:00");
+  if( dt > limit1){
+    $('#limit-img').attr('src','images/limit-2.png');
+  }else{
+    $('#limit-img').attr('src','images/limit-1.png');
+  }
+
+
   $(".img-modal").click(function(){
     var src = $(this).attr("src");
     $("#image_myModal").html("\

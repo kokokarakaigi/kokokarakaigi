@@ -1,0 +1,19 @@
+{
+  "name": "kokokara",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --server --files *"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gacktomo/kokokara.git"
+  },
+  "author": "matsuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gacktomo/kokokara/issues"
+  },
+  "homepage": "https://github.com/gacktomo/kokokara#readme"
+}
