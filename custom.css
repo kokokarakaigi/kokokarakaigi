@@ -263,3 +263,28 @@ a, p, {
 .question {
   border-bottom: dashed 1px var(--main-bg-color);
 }
+.sponcer-image {
+  width:90%; 
+  height:auto;
+  position: relative;
+  top:0px;
+}
+.sponcer {
+  border:1px var(--main-bg-color) solid; 
+  width:80px; 
+  height:80px; 
+  padding:2px 2px 2px 2px ;
+  display: table-cell; 
+  vertical-align: middle;
+}
+.big-sponcer {
+  max-width:330px;
+  max-height:330px;
+  border:1px var(--main-bg-color) solid; 
+  width:100%; 
+  height:auto; 
+  /* padding:2px 2px 2px 2px ; */
+  /* padding-bottom:100%; */
+  display: table-cell; 
+  vertical-align: middle;
+}
