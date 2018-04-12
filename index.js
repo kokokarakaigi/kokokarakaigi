@@ -82,6 +82,7 @@ $(function(){
     {name:"geo", img:"images/company/geo.png"},
     {name:"tabuchi", img:"images/company/tabuchi.png"},
     {name:"total", img:"images/company/total.png"},
+    {name:"okuchi", img:"images/company/okuchi.jpg"},
   ];
   $.each(big_sponcer_list,function(i,v){
     $("#big-sponcer-list").append("\
