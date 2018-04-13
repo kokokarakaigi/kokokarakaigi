@@ -270,7 +270,7 @@ a, p, {
   top:0px;
 }
 .sponcer {
-  border:1px var(--main-bg-color) solid; 
+  /* border:1px var(--main-bg-color) solid;  */
   width:80px; 
   height:80px; 
   padding:2px 2px 2px 2px ;
@@ -280,11 +280,12 @@ a, p, {
 .big-sponcer {
   max-width:330px;
   max-height:330px;
-  border:1px var(--main-bg-color) solid; 
   width:100%; 
   height:auto; 
-  /* padding:2px 2px 2px 2px ; */
-  /* padding-bottom:100%; */
   display: table-cell; 
   vertical-align: middle;
+  /* margin-bottom: 40px; */
+  /* border:1px var(--main-bg-color) solid;  */
+  /* padding:2px 2px 2px 2px ; */
+  /* padding-bottom:100%; */
 }

@@ -89,7 +89,7 @@ $(function(){
     <div class='col-12 col-md-6' style='margin-bottom: 15px;'> \
       <center class='big-sponcer'>\
         <img src='"+v.img+"' class='sponcer-image'> \
-      </center> \
+      </center> <br>\
     </div><br>");
   });
   $.each(sponcer_list,function(i,v){
