@@ -264,26 +264,30 @@ a, p, {
   border-bottom: dashed 1px var(--main-bg-color);
 }
 .sponcer-image {
-  width:90%; 
+  width:100%; 
   height:auto;
   position: relative;
   top:0px;
 }
 .sponcer {
   /* border:1px var(--main-bg-color) solid;  */
-  width:80px; 
-  height:80px; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:100%; 
+  height:120px; 
   padding:2px 2px 2px 2px ;
-  display: table-cell; 
-  vertical-align: middle;
 }
 .big-sponcer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   max-width:330px;
   max-height:330px;
   width:100%; 
-  height:auto; 
-  display: table-cell; 
-  vertical-align: middle;
+  height:300px; 
+  /* display: table-cell; 
+  vertical-align: middle; */
   /* margin-bottom: 40px; */
   /* border:1px var(--main-bg-color) solid;  */
   /* padding:2px 2px 2px 2px ; */
