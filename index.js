@@ -83,6 +83,9 @@ $(function(){
     {name:"tabuchi", img:"images/company/tabuchi.png"},
     {name:"total", img:"images/company/total.png"},
     {name:"okuchi", img:"images/company/okuchi.jpg"},
+    {name:"nomura", img:"images/company/nomura.png"},
+    {name:"renove", img:"images/company/renove.png"},
+    {name:"okuchi", img:"images/company/GKAD.png"},
   ];
   $.each(big_sponcer_list,function(i,v){
     $("#big-sponcer-list").append("\
@@ -94,7 +97,7 @@ $(function(){
   });
   $.each(sponcer_list,function(i,v){
     $("#sponcer-list").append("\
-    <div class='col-4 col-md-2 col-lg-2' style='margin-bottom: 15px;'> \
+    <div class='col-6 col-md-2 col-lg-2' style='margin-bottom: 15px;'> \
       <center class='sponcer'>\
         <img src='"+v.img+"' class='sponcer-image'> \
       </center> \
