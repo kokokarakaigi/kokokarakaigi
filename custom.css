@@ -20,7 +20,7 @@ body {
   -o-transition: opacity 0.4s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .pc-only {
     display: none;
   }

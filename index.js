@@ -86,6 +86,10 @@ $(function(){
     {name:"nomura", img:"images/company/nomura.png"},
     {name:"renove", img:"images/company/renove.png"},
     {name:"okuchi", img:"images/company/GKAD.png"},
+    {name:"forever", img:"images/company/forever.png"},
+    {name:"kubo",    img:"images/company/kubo.JPG"},
+    {name:"soushin", img:"images/company/soushin.JPG"},
+    {name:"sumains", img:"images/company/sumais.JPG"},
   ];
   $.each(big_sponcer_list,function(i,v){
     $("#big-sponcer-list").append("\
