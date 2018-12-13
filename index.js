@@ -11,6 +11,14 @@ $(function(){
     $('#limit-img').attr('src','images/limit-1.png');
   }
 
+  if($(window).width() < 767){
+    $('#information').addClass('text-center')
+    $('#sponser').addClass('text-center')
+  }else{
+    $('#information').removeClass('text-center')
+    $('#sponser').removeClass('text-center')
+  }
+
 
   $(".img-modal").click(function(){
     var src = $(this).attr("src");
@@ -30,7 +38,10 @@ $(function(){
     $('.container-fluid').each(function(){
       var targetPosition = $(this).offset().top;
       if(topWindow > targetPosition - windowHeight + 100){
-      $(this).addClass("fadeInDown");
+        if ( $(this).hasClass("not_fadeInDown") ){
+        } else {
+          $(this).addClass("fadeInDown");
+        }
       }
     });
   });
@@ -52,24 +63,25 @@ $(function(){
 
   //add member function
   let member_list = [
-    {name:"たかはし くうが", eng:"Kuga Takahashi", img:"kuga.jpg"},
-    {name:"井尻 敬天",      eng:"Yoshitaka Iziri", img:"yoshi.jpg"},
-    {name:"岡元 里桜",      eng:"Rio Okamoto", img:"rio.jpg"},
-    {name:"森下 彩絵",      eng:"Sae Morishita", img:"sae.jpg"},
-    {name:"寺田 麗々蘭",    eng:"Ririka Terada", img:"riri.jpg"},
-    {name:"長谷川 天音",    eng:"Amane Hasegawa", img:"ama.jpg"},
-    {name:"松吉 みさと",    eng:"Misato Matsuyoshi", img:"chos.jpg"},
-    {name:"髙橋 愛梨",      eng:"Airi Takahashi", img:"airi.jpg"},
-    {name:"松尾 智博",      eng:"Tomohiro Matsuo", img:"matsuo.jpg"},
-    {name:"盛田 彩乃",      eng:"Ayano Morita", img:"ayano.jpg"},
-    {name:"高野 愛佳",      eng:"Aika Takano", img:"kano.jpg"},
-    {name:"草留 早紀子",    eng:"Sakiko Kusadome", img:"sakko.jpg"},
+    {univ:"鹿児島大学", name:"後藤 宏太", eng:"Kota Goto", img:"test.jpg"},
+    {univ:"志學館大学", name:"石川 葵", eng:"Aoi Ishikawa", img:"test.jpg"},
+    {univ:"鹿児島国際大学", name:"増留 汐里", eng:"Shiori Masudome", img:"test.jpg"},
+    {univ:"志學館大学", name:"森口 大巨", eng:"Daiki Moriguchi", img:"test.jpg"},
+    {univ:"鹿児島大学", name:"佐々木 彩華", eng:"Ayaka Sasaki", img:"test.jpg"},
+    {univ:"志學館大学", name:"岡元 里桜", eng:"Rio Okamoto", img:"test.jpg"},
+    {univ:"鹿児島県立短期大学", name:"寺田 桜心", eng:"Omi Terada", img:"test.jpg"},
+    {univ:"鹿児島大学", name:"株本 雅樹", eng:"Masaki Kabumoto", img:"test.jpg"},
+    {univ:"鹿児島国際大学", name:"高野 愛佳", eng:"Aika Takano", img:"test.jpg"},
+    {univ:"鹿児島純心女子大学", name:"高橋 愛梨", eng:"Airi Takahashi", img:"test.jpg"},
+    {univ:"北九州私立大学", name:"高橋 空雅", eng:"Kuga Takahashi", img:"test.jpg"},
+    {univ:"鹿児島大学", name:"寺田 麗々蘭", eng:"Ririka Terada", img:"test.jpg"},
   ];
   $.each(member_list,function(i,v){
     $("#member-list").append("\
-    <div class='col-4 col-md-3 col-lg-2' style='margin-bottom: 15px;'> \
-    <center style='width:100px;'> <img src='images/members/"+v.img+"' style='width:80px; border:1px var(--main-bg-color) solid;'> \
-    <div style='font-size:13px;'>"+v.name+"</div> <div style='font-size:9px'>"+v.eng+"</div> \
+    <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
+    <center style='width:100px;'> <img src='images/members/"+v.img+"' style='width: 90px; border:1px var(--main-bg-color) solid; border-radius: 50%;'> \
+    <div style='width: 90px;margin: 10px auto 0;font-size:9px; color: var(--main-bg-color);border-bottom: 1px var(--main-bg-color) solid;padding-bottom: 3px;'><span>"+v.univ+"</div> \
+    <div style='margin: 3px auto 0;font-size:15px; color: var(--main-bg-color);'>"+v.name+"</div> <div style='font-size:9px; color: var(--main-bg-color);'>"+v.eng+"</div> \
     </center> </div><br>");
   });
   

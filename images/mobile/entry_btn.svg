@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.06 153.06">
+    <defs>
+        <style>
+            .cls-1{fill:#ad3123;}.cls-2{font-size:30px;font-family:YuGo-Bold-83pv-RKSJ-H, YuGothic;letter-spacing:0.2em;}.cls-2,.cls-4{fill:#fff;font-weight:700;}.cls-3{letter-spacing:0.2em;}.cls-4{font-size:21.92px;font-family:NotoSans-CondensedExtraBold, Noto Sans;letter-spacing:0.1em;}.cls-5{letter-spacing:0.1em;}.cls-6{letter-spacing:0.09em;}.cls-7{letter-spacing:0.1em;}.cls-8{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}
+        </style>
+    </defs>
+    <title>
+        応募ボタン
+    </title>
+    <g id="レイヤー_2" data-name="レイヤー 2">
+        <g id="レイヤー_1-2" data-name="レイヤー 1">
+            <circle cx="76.53" cy="76.53" r="76.52" class="cls-1" transform="translate(-6.71 7.36) rotate(-5.28)"/>
+            <text class="cls-2" transform="translate(42.78 74.91)">
+                応<tspan x="36.13" y="0" class="cls-3">募</tspan>
+            </text>
+            <text class="cls-4" transform="translate(40.9 99.88)">
+                E<tspan x="12.57" y="0" class="cls-5">NT</tspan><tspan x="42.77" y="0" class="cls-6">R</tspan><tspan x="57.11" y="0" class="cls-7">Y</tspan>
+            </text>
+            <circle cx="76.53" cy="76.53" r="68.02" class="cls-8" transform="translate(-6.71 7.36) rotate(-5.28)"/>
+        </g>
+    </g>
+</svg>
