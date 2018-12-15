@@ -4,19 +4,68 @@ $(function(){
   $('.container-fluid').css('visibility','hidden');
 
   var dt = new Date();
-  var limit1 = new Date("2018/03/24 00:00:00");
+  var limit1 = new Date("2018/12/31 00:00:00");
   if( dt > limit1){
     $('#limit-img').attr('src','images/limit-2.png');
   }else{
     $('#limit-img').attr('src','images/limit-1.png');
   }
 
+  if($(window).width() < 575){
+    $('.date_resize').addClass('date_resize_766');
+    $('.entry_btn_resize').addClass('entry_btn_resize_766');
+  }
+
   if($(window).width() < 767){
-    $('#information').addClass('text-center')
-    $('#sponser').addClass('text-center')
-  }else{
-    $('#information').removeClass('text-center')
-    $('#sponser').removeClass('text-center')
+    $('.date_resize').addClass('date_resize_767');
+    $('.entry_btn_resize').addClass('entry_btn_resize_767');
+    $('#information').addClass('text-center');
+    $('#sponser').addClass('text-center');
+    $('#aboutus_top').append("\
+      <center>\
+      <img src='images/aboutus.jpg' class='media-object' style='width:100%; margin-bottom:20px;'>\
+      </center>\
+    ");
+    $('#aboutus_bottom').append("\
+      <p class='content-text'>\
+        2018.08.27 プロジェクト始動。<br>\
+        <br>\
+        <span style='font-size: 1.3em; margin: 15px 0 15px -7px;'>\
+          【とっておきな私と、なりたい私に出会う。】\
+        </span>\
+        <br>\
+        <br>\
+        をコンセプトに添え、<br>\
+        鹿児島に身を置く学生12名で構成。<br>\
+        あなたの想いの側にいたい。<br>\
+        手と手をとり合い歩んでく。<br>\
+        あなたが明日にときめくように。\
+      </p>\
+    ");
+  } else {
+    $('#information').removeClass('text-center');
+    $('#sponser').removeClass('text-center');
+    $('#aboutus_top').append("\
+      <p class='content-text' >\
+        2018.08.27 プロジェクト始動。<br>\
+        <br>\
+        <span style='font-size: 1.3em; margin: 15px 0 15px -7px;'>\
+          【とっておきな私と、なりたい私に出会う。】\
+        </span>\
+        <br>\
+        <br>\
+        をコンセプトに添え、<br>\
+        鹿児島に身を置く学生12名で構成。<br>\
+        あなたの想いの側にいたい。<br>\
+        手と手をとり合い歩んでく。<br>\
+        あなたが明日にときめくように。\
+      </p>\
+    ");
+    $('#aboutus_bottom').append("\
+      <center>\
+        <img src='images/aboutus.jpg' style='width:100%; margin-bottom:20px;'>\
+      </center>\
+    ");
   }
 
 
