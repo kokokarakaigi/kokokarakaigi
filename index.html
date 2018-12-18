@@ -10,11 +10,10 @@
   <meta property="og:title" content="ココカラカイギ" />
   <meta property="og:description" content="いきをするように本気で向き合う。隣り合わせに、皆で描こう。ひとと想いを手繰り寄せ、結び目をひとつ鹿児島に。思い思いの未来を描く、ゆるやかな余白を支度する。あなたがあなたに本物で在ること。どこを切り取っても、本物で在り続けること。何よりも、大事に大事にしたい。あなたの“ココカラ”が、より確かものでありますように。そんな願いを込めて。"/>
   <meta property="og:image" content="https://kokokarakaigi.com/images/title-square.png" />  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="custom.css">
   <script src="index.js"> </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -70,31 +69,28 @@
   </div>
 </div>
 
-<div class="jumbotron-fluid text-center" style="background-color: rgb(228, 194, 0);">
-  <div class="container">
-    <div class="row band_resize">
+  <div class="container text-center" style="max-width: 100%; background-color: rgb(228, 194, 0);">
+    <div class="row band">
       <div class="col-8">
-        <object class="date_resize" data="/images/mobile/open_date.svg" type="image/svg+xml" width="340.4" height="119.76"></object>
+        <object class="date" data="/images/mobile/open_date.svg" type="image/svg+xml" width="340.4" height="119.76"></object>
       </div>
       <div class="col-4">
         <div class="row">
-          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-            <object class="entry_btn_resize" data="/images/pc/entry_btn.svg" type="image/svg+xml" width="153.06" height="153.06"></object>
+          <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 col-xs-12">
+            <object class="entry_btn" data="/images/pc/entry_btn.svg" type="image/svg+xml" width="153.06" height="153.06"></object>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 <!-- content -->
 <div class="container" style="max-height:40px; max-width: 1000px;">
   <div id="message" class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <!-- <img src="images/message-mobile.svg" class="mobile-only" style="width:100%;"> -->
-        <img src="images/pc/message_pc.svg" class="pc-only" style="width:100%; margin-top:30px;">
-        <div class="mobile-only" style="width:100%; margin-top:30px;">
+        <img src="images/pc/message_pc.svg" class="d-none d-sm-block" style="width:100%; margin-top:30px;">
+        <div class="d-block d-sm-none" style="width:100%; margin-top:30px;">
           <p class="content-text content-center">
             とっておきな私と、なりたい私に出会う。<br>
             <br>
@@ -123,7 +119,7 @@
     <br>
     <div class="row">
       <div id="project-left" class="col-sm-6">
-        <p class="content-text" style="margin-left:-10px; margin-top: -11px; font-size:1.1em;">
+        <p class="project-title">
           【交流・対話・発表】
         </p>
         <p class="content-text">
@@ -196,8 +192,8 @@
       </div>
     </div>
   </div>
-
   <div class="modal fade" id="image_myModal"> </div> 
+ 
   <div id="schedule" class="container-fluid"> 
     <center>
       <h2 style="margin-top:50px;">TIME TABLE</h2>
@@ -224,32 +220,54 @@
         <h2 >ABOUT US</h2>
         <br>
       </div>
-      <div class="col-sm-6">
-        <span id="aboutus_top"></span>
-        <!-- <p class="content-text" >
+      <!-- 順番切り替え -->
+      <!-- スマホ以外表示 -->
+      <div class="col-sm-6 d-none d-sm-block d-md-none">
+        <p class="content-text" style="margin-bottom:0;">
+          2018.08.27 プロジェクト始動。
+        </p>
+        <p style="
+        font-size: 1.7vw;
+        margin: 1vw 0 0.5vw -0.6vw;">
+          【とっておきな私と、なりたい私に出会う。】
+        </p>
+        <p class="content-text" style="text-indent:0;">
+          をコンセプトに添え、<br>
+          鹿児島に身を置く学生12名で構成。<br>
+          あなたの想いの側にいたい。<br>
+          手と手をとり合い歩んでく。<br>
+          あなたが明日にときめくように。
+        </p>
+      </div>
+      <div class="col-sm-6 d-none d-sm-block d-md-none">
+        <center>
+          <img src="images/aboutus.jpg" style="width:100%; margin-bottom:20px;">
+        </center>
+      </div>
+      <!-- スマホのみ表示 -->
+      <div class="col-sm-6 d-sm-none d-md-block">
+        <center>
+          <img src="images/aboutus.jpg" style="width:100%; margin-bottom:20px;">
+        </center>
+      </div>
+      <div class="col-sm-6 d-sm-none d-md-block">
+        <p class="content-text" style="margin-bottom: 8px;">
           2018.08.27 プロジェクト始動。<br>
-          <br>
-          <span style="font-size: 1.3em; margin: 15px 0 15px -7px;">
+          <span style="margin: 2vw 0 0 -1vw;">
             【とっておきな私と、なりたい私に出会う。】
           </span>
-          <br>
           <br>
           をコンセプトに添え、<br>
           鹿児島に身を置く学生12名で構成。<br>
           あなたの想いの側にいたい。<br>
           手と手をとり合い歩んでく。<br>
           あなたが明日にときめくように。
-        </p> -->
+        </p>
       </div>
-      <div class="col-sm-6">
-        <span id="aboutus_bottom"></span>
-        <!-- <center>
-          <img src="images/aboutus.jpg" style="width:100%; margin-bottom:20px;">
-        </center> -->
-      </div>
+      <!-- === -->
       <div class="col-12">
         <center>
-          <div id="member-list" class="row" style="margin-top:40px;">
+          <div id="member-list" class="row" style="margin-top: 20px;">
           </div>
         </center>
       </div>
@@ -265,114 +283,6 @@
       </div>
     </center>
   </div>
-  
-
-  <!--
-
-  <div id="qa" class="container-fluid">
-    <h2 style="margin-top:5px;">Q&A</h2>
-    <br>
-    <table class="table">
-      <tbody>
-        <tr data-toggle="collapse" data-target="#q1" style="cursor: pointer;">
-          <td class="question">
-            <h2 style="display: inline;">Q</h2>
-            <span class="content-text">
-              <strong> 具体的にワークはどんなことをしますか？</strong>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div id="q1" class="collapse">
-              <h2 style="display: inline;">A</h2>
-              <span class="content-text"> 社会人との交流や、参加者同士の対話、そして自分自身との対話を中心としたワークになっています。</span>
-            </div>
-          </td>
-        </tr>
-  
-        <tr data-toggle="collapse" data-target="#q2" style="cursor: pointer;">
-          <td class="question">
-            <h2 style="display: inline;">Q</h2>
-            <span class="content-text">
-              <strong> 参加費の詳細を教えてください。</strong>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div id="q2" class="collapse">
-              <h2 style="display: inline;">A</h2>
-              <span class="content-text"> 主に宿泊費や食費、2日間でのバス代となります。また帰りの交通費は別途実費となります。</span>
-            </div>
-          </td>
-        </tr>
-  
-        <tr data-toggle="collapse" data-target="#q3" style="cursor: pointer;">
-          <td class="question">
-            <h2 style="display: inline;">Q</h2>
-            <span class="content-text">
-              <strong> 頴娃町までの行き帰りはどうしたらいいですか？</strong>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div id="q3" class="collapse">
-              <h2 style="display: inline;">A</h2>
-              <span class="content-text"> 行きは喜入駅に10時に集合していただき、全員でバスに向かいます。帰りは石垣駅（JR 指宿枕崎線）が徒歩10分のところにありますので、電車移動になります。また行きの喜入駅までと帰りの石垣駅からの交通費は自己負担となります。ご了承ください。
-                </span>
-            </div>
-          </td>
-        </tr>
-  
-        <tr data-toggle="collapse" data-target="#q4" style="cursor: pointer;">
-          <td class="question">
-            <h2 style="display: inline;">Q</h2>
-            <span class="content-text">
-              <strong> 参加費の支払いはどうすればいいですか？</strong>
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-              <div id="q4" class="collapse">
-                <h2 style="display: inline;">A</h2><span class="content-text"> 申し込み後に事務局より銀行の振込先を連絡いたします。期日までにお振込みをお願いいたします。  </span>
-              </div>
-            </td>
-          </tr>
-
-          <tr data-toggle="collapse" data-target="#q5" style="cursor: pointer;">
-            <td class="question">
-              <h2 style="display: inline;">Q</h2><span class="content-text"><strong> 学生ならだれでも参加できますか？</strong></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div id="q5" class="collapse">
-                <h2 style="display: inline;">A</h2><span class="content-text"> はい、大学生、専門学生、高校生であればだれでも参加いただけます。また、鹿児島県外の学生さんも大歓迎です。当日の受付時に学生証の提示をお願いします。   </span>
-              </div>
-            </td>
-          </tr>
-
-          <tr data-toggle="collapse" data-target="#q6" style="cursor: pointer;">
-            <td class="question">
-              <h2 style="display: inline;">Q</h2><span class="content-text"><strong> 将来やりたいことがありませんが、参加しても大丈夫でしょうか？</strong></span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div id="q6" class="collapse">
-                <h2 style="display: inline;">A</h2><span class="content-text"> 大丈夫です！！私たちもまさに今、やりたいことを探している途中です。一緒に考えましょう！   </span>
-              </div>
-            </td>
-          </tr>
-
-        </tbody>
-      </table>
-
-  </div>
-  -->
 
   <div id="information" class="container-fluid">
     <h2 style="margin-top:0px;">INFOMATION</h2>

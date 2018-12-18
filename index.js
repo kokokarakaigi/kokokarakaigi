@@ -1,6 +1,31 @@
+var resize_func = function (width) {
+  if(width < 575){
+    // mobile
+    $('#information').addClass('text-center');
+    $('#sponser').addClass('text-center');
+    $('.date').removeClass('date_ipad');
+    $('.entry_btn').removeClass('entry_btn_ipad');
+    $('.date').addClass('date_mobile');
+    $('.entry_btn').addClass('entry_btn_mobile');
+  } else if (width < 767) {
+    // Tablet
+    $('#information').addClass('text-center');
+    $('#sponser').addClass('text-center');
+    $('.date').removeClass('date_mobile');
+    $('.entry_btn').removeClass('entry_btn_mobile');
+    $('.date').addClass('date_ipad');
+    $('.entry_btn').addClass('entry_btn_ipad');
+  } else {
+    $('#information').removeClass('text-center');
+    $('#sponser').removeClass('text-center');
+    $('.date').removeClass('date_mobile');
+    $('.entry_btn').removeClass('entry_btn_mobile');
+    $('.date').removeClass('date_ipad');
+    $('.entry_btn').removeClass('entry_btn_ipad');
+  }
+};
+
 $(function(){
-  // $("#top-container").css('visibility','hidden');
-  // $("#top-container").addClass("fadeInDown");
   $('.container-fluid').css('visibility','hidden');
 
   var dt = new Date();
@@ -11,63 +36,10 @@ $(function(){
     $('#limit-img').attr('src','images/limit-1.png');
   }
 
-  if($(window).width() < 575){
-    $('.date_resize').addClass('date_resize_766');
-    $('.entry_btn_resize').addClass('entry_btn_resize_766');
-  }
-
-  if($(window).width() < 767){
-    $('.date_resize').addClass('date_resize_767');
-    $('.entry_btn_resize').addClass('entry_btn_resize_767');
-    $('#information').addClass('text-center');
-    $('#sponser').addClass('text-center');
-    $('#aboutus_top').append("\
-      <center>\
-      <img src='images/aboutus.jpg' class='media-object' style='width:100%; margin-bottom:20px;'>\
-      </center>\
-    ");
-    $('#aboutus_bottom').append("\
-      <p class='content-text'>\
-        2018.08.27 プロジェクト始動。<br>\
-        <br>\
-        <span style='font-size: 1.3em; margin: 15px 0 15px -7px;'>\
-          【とっておきな私と、なりたい私に出会う。】\
-        </span>\
-        <br>\
-        <br>\
-        をコンセプトに添え、<br>\
-        鹿児島に身を置く学生12名で構成。<br>\
-        あなたの想いの側にいたい。<br>\
-        手と手をとり合い歩んでく。<br>\
-        あなたが明日にときめくように。\
-      </p>\
-    ");
-  } else {
-    $('#information').removeClass('text-center');
-    $('#sponser').removeClass('text-center');
-    $('#aboutus_top').append("\
-      <p class='content-text' >\
-        2018.08.27 プロジェクト始動。<br>\
-        <br>\
-        <span style='font-size: 1.3em; margin: 15px 0 15px -7px;'>\
-          【とっておきな私と、なりたい私に出会う。】\
-        </span>\
-        <br>\
-        <br>\
-        をコンセプトに添え、<br>\
-        鹿児島に身を置く学生12名で構成。<br>\
-        あなたの想いの側にいたい。<br>\
-        手と手をとり合い歩んでく。<br>\
-        あなたが明日にときめくように。\
-      </p>\
-    ");
-    $('#aboutus_bottom').append("\
-      <center>\
-        <img src='images/aboutus.jpg' style='width:100%; margin-bottom:20px;'>\
-      </center>\
-    ");
-  }
-
+  resize_func($(window).width());
+  $(window).resize(function(){
+    resize_func($(window).width());
+  });
 
   $(".img-modal").click(function(){
     var src = $(this).attr("src");
@@ -87,10 +59,7 @@ $(function(){
     $('.container-fluid').each(function(){
       var targetPosition = $(this).offset().top;
       if(topWindow > targetPosition - windowHeight + 100){
-        if ( $(this).hasClass("not_fadeInDown") ){
-        } else {
-          $(this).addClass("fadeInDown");
-        }
+        $(this).addClass("fadeInDown");
       }
     });
   });
@@ -128,10 +97,21 @@ $(function(){
   $.each(member_list,function(i,v){
     $("#member-list").append("\
     <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
-    <center style='width:100px;'> <img src='images/members/"+v.img+"' style='width: 90px; border:1px var(--main-bg-color) solid; border-radius: 50%;'> \
-    <div style='width: 90px;margin: 10px auto 0;font-size:9px; color: var(--main-bg-color);border-bottom: 1px var(--main-bg-color) solid;padding-bottom: 3px;'><span>"+v.univ+"</div> \
-    <div style='margin: 3px auto 0;font-size:15px; color: var(--main-bg-color);'>"+v.name+"</div> <div style='font-size:9px; color: var(--main-bg-color);'>"+v.eng+"</div> \
-    </center> </div><br>");
+      <center style='width: 100px; color: var(--main-bg-color);'> \
+        <img src='images/members/"+v.img+"' style='width: 75px; border:1px var(--main-bg-color) solid; border-radius: 50%;'> \
+        <div style='width: 90px; margin: 5px auto 0; font-size: 10px; border-bottom: 1px solid; padding-bottom: 3px;'> \
+          "+v.univ+" \
+        </div> \
+        <div style='margin: 3px auto 0; font-size: 13px;'> \
+          "+v.name+" \
+        </div> \
+        <div style='font-size: 10px;'> \
+          "+v.eng+" \
+        </div> \
+      </center> \
+    </div> \
+    <br> \
+    ");
   });
   
   //add sponcer function
