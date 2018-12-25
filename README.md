@@ -1,2 +1,2 @@
-# kokokara
+# kokokarakaigi
 ココカラカイギのHPデータ
