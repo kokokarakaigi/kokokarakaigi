@@ -32,6 +32,7 @@ var resize_func = function (width) {
     $('#field-img').css({'width':'100%'});
     $('h2').css({'font-size':'1.5rem'});
     $('#member-list').empty();
+    //add member function
     $.each(member_list,function(i,v){
       $("#member-list").append("\
       <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
@@ -64,6 +65,7 @@ var resize_func = function (width) {
     $('#field-img').css({'width':'130%'});
     $('h2').css({'font-size':''});
     $('#member-list').empty();
+    //add member function
     $.each(member_list,function(i,v){
       $("#member-list").append("\
       <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
@@ -96,6 +98,7 @@ var resize_func = function (width) {
     $('h2').css({'font-size':''});
     $('#field-block').css({'margin-left':'150px'})
     $('#member-list').empty();
+    //add member function
     $.each(member_list,function(i,v){
       $("#member-list").append("\
       <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
@@ -119,10 +122,6 @@ var resize_func = function (width) {
 };
 
 $(function(){
-  //add member function
-  
-  
-
   $('.container-fluid').css('visibility','hidden');
 
   var dt = new Date();
