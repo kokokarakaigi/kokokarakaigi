@@ -36,14 +36,17 @@ body {
   }
   .content-text {
     line-height: 25px !important;
-    font-size: 3vw !important;
+    font-size: 15px !important;
+    /* font-size: 3vw !important; */
   }
   .content-text-big {
-    font-size: 4.4vw !important;
+    /* font-size: 4.4vw !important; */
+    font-size: 15px !important;
   }
   .project-title {
     margin-left: -2vw !important;
-    font-size: 3.5vw !important;
+    font-size: 15px !important;
+    /* font-size: 3.5vw !important; */
   }
 }
 
@@ -198,10 +201,10 @@ a, p {
 }
 .content-text {
   letter-spacing: 0.1em;
-  font-size: 1.4vw;
   line-height: 30px;
   text-indent: 0.15em;
   color: var(--main-bg-color);
+  font-size: 14px !important;
 }
 .content-text-big {
   letter-spacing: 0.15em;
