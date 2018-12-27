@@ -9,7 +9,7 @@ var member_list = [
   {univ:"鹿児島大学", name:"株本 雅樹", eng:"Masaki Kabumoto", img:"Masaki.jpg"},
   {univ:"鹿児島国際大学", name:"高野 愛佳", eng:"Aika Takano", img:"Aika.jpg"},
   {univ:"鹿児島純心女子大学", name:"高橋 愛梨", eng:"Airi Takahashi", img:"Airi.jpg"},
-  {univ:"北九州私立大学", name:"高橋 空雅", eng:"Kuga Takahashi", img:"Kuga.jpg"},
+  {univ:"北九州市立大学", name:"高橋 空雅", eng:"Kuga Takahashi", img:"Kuga.jpg"},
   {univ:"鹿児島大学", name:"寺田 麗々蘭", eng:"Ririka Terada", img:"Ririka.jpg"},
 ];
 
