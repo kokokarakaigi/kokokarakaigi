@@ -98,7 +98,7 @@ h3 {
 h1, h4{ 
   color: var(--accent-color);
 }
-a, p, { 
+a, p {
   color: var(--main-bg-color);
 }
 .icon-bar {
