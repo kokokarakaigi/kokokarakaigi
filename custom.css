@@ -9,7 +9,7 @@
 }
 body {
   position: relative;
-  font-family: 'DIN_Alternate_Bold', '游ゴシック', 'YuGothic',sans-serif;
+  font-family: 'DIN_Alternate_Bold', '游ゴシック', 'YuGothic',;
   font-weight: bold;
   background-color: white;
   transition: opacity 0.4s;
