@@ -17,7 +17,7 @@ var resize_func = function (width) {
   if(width < 575){
     // mobile
     $('#information').addClass('text-center');
-    $('#sponser').addClass('text-center');
+    $('#sponsor').addClass('text-center');
     $('.date').removeClass('date_ipad');
     $('.entry_btn').removeClass('entry_btn_ipad');
     $('.date').addClass('date_mobile');
@@ -55,7 +55,7 @@ var resize_func = function (width) {
   } else if (width < 767) {
     // Tablet
     $('#information').addClass('text-center');
-    $('#sponser').addClass('text-center');
+    $('#sponsor').addClass('text-center');
     $('.date').removeClass('date_mobile');
     $('.entry_btn').removeClass('entry_btn_mobile');
     $('.date').addClass('date_ipad');
@@ -87,7 +87,7 @@ var resize_func = function (width) {
     });
   } else {
     $('#information').removeClass('text-center');
-    $('#sponser').removeClass('text-center');
+    $('#sponsor').removeClass('text-center');
     $('.date').removeClass('date_mobile');
     $('.entry_btn').removeClass('entry_btn_mobile');
     $('.date').removeClass('date_ipad');
