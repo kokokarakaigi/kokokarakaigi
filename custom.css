@@ -32,20 +32,20 @@ body {
 
 @media (max-width: 575px) {
   .band {
-    height: 40px !important;
+    height: 70px !important;
   }
   .content-text {
     line-height: 25px !important;
-    font-size: 15px !important;
+    font-size: 10px !important;
     /* font-size: 3vw !important; */
   }
   .content-text-big {
     /* font-size: 4.4vw !important; */
-    font-size: 15px !important;
+    font-size: 10px !important;
   }
   .project-title {
     margin-left: -2vw !important;
-    font-size: 15px !important;
+    font-size: 10px !important;
     /* font-size: 3.5vw !important; */
   }
 }
@@ -85,6 +85,10 @@ body {
     background-position-x: 90%;
     background-position-y: 100%;
   }
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+}
 }
 
 /* PC view */
@@ -99,6 +103,10 @@ body {
     -ms-flex-direction: row-reverse!important;
     flex-direction: row-reverse!important;
   }
+  .col-md-15 {
+    width: 20%;
+    float: left;
+}
 }
 
 /* animations */
@@ -164,10 +172,11 @@ a, p {
   background-image: url("images/menu_icon.svg");
 }
 .jumbotron {
-  margin-bottom: 0px;
+  margin-bottom: -60px;
+  padding-bottom: 3%;
   color: var(--main-bg-color);
   background:url(./images/header-bg.jpg) center no-repeat;
-  background-position-y: 70%;
+  background-position-y: -5%;
   -moz-background-size:cover;
   background-size:cover;
   border-radius: 0;
@@ -205,11 +214,14 @@ a, p {
   color: var(--main-bg-color);
 }
 .content-text {
+  z-index: 15;
+  position: relative;
+  text-align: center;
   letter-spacing: 0.1em;
   line-height: 30px;
   text-indent: 0.15em;
   color: var(--main-bg-color);
-  font-size: 14px !important;
+  font-size: 14px;
 }
 .content-text-big {
   letter-spacing: 0.15em;
@@ -284,6 +296,11 @@ a, p {
   /* background-position-y: 100%; */
 }
 #field-right {
+  /* background:url(./images/.svg) center no-repeat/97%;
+  background-position-x: 150px;
+  background-position-y: 80%; */
+}
+#field-left {
   /* background:url(./images/box-field.svg) center no-repeat/97%;
   background-position-x: 150px;
   background-position-y: 80%; */
@@ -337,7 +354,7 @@ a, p {
   /* padding-bottom:100%; */
 }
 .band {
-  height: 90px;
+  height: 135px;
 }
 .shift_right {
   margin-left: 30px;
@@ -378,10 +395,104 @@ a, p {
   height: 120px !important;
 }
 .project-title {
+  text-align: center;
+  z-index:15;
+  position: relative;
   letter-spacing: 0.15em;
   line-height: 25px;
   text-indent: 0.15em;
   margin-left: -1.3vw;
   margin-top: -11px;
   font-size: 17px;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+/* 応募ボタン */
+/* 通常のボタン色 */
+.btn-apply,
+.btn-apply.disabled, .btn-apply:disabled {
+  color: #FF8C37;
+  background-color:#ffff;
+  border-color: #ffff;
+}
+
+/*focusされた時の枠線の色 */
+.btn-apply:focus, .btn-apply.focus,
+.btn-apply:not(:disabled):not(.disabled):active:focus, .btn-apply:not(:disabled):not(.disabled).active:focus,
+.show > .btn-apply.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #FFC832;
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-apply:hover {
+  color: #fff;
+  background-color:#FF8C37;
+  border-color: #FF8C37;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-apply:not(:disabled):not(.disabled):active, .btn-apply:not(:disabled):not(.disabled).active,
+.show > .btn-apply.dropdown-toggle {
+  color: #fff;
+  background-color: #FF8C37;
+  border-color: #FF8C37;
+}
+
+.last-apply {
+  margin-bottom: 0px;
+  padding-bottom: 3%;
+  color: var(--main-bg-color);
+  background-color: #FFC832;
+  -moz-background-size:cover;
+  background-size:cover;
+  border-radius: 0;
+  /* background-color: var(--accent-color);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden; */
+}
+
+/* お問い合わせはこちらボタン */
+/* 通常のボタン色 */
+.btn-contact,
+.btn-contact.disabled, .btn-contact:disabled {
+  color: #ffffff;
+  background-color:#FFC832;
+  border-color:#FFC832;
+}
+
+/* focusされた時の枠線の色 */
+btn-contact:focus, .btn-contact.focus,
+.btn-contact:not(:disabled):not(.disabled):active:focus, .btn-contact:not(:disabled):not(.disabled).active:focus,
+.show > .btn-contact.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #FFC832;
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-contact:hover {
+  color: #fff;
+  background-color:#FF8C37;
+  border-color: #FF8C37;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-contact:not(:disabled):not(.disabled):active, .btn-contact:not(:disabled):not(.disabled).active,
+.show > .btn-contact.dropdown-toggle {
+  color: #fff;
+  background-color: #FF8C37;
+  border-color: #FF8C37;
 }

@@ -1,16 +1,14 @@
 var member_list = [
-  {univ:"鹿児島大学", name:"後藤 宏太", eng:"Kota Goto", img:"Kota.jpg"},
-  {univ:"志學館大学", name:"石川 葵", eng:"Aoi Ishikawa", img:"Aoi.jpg"},
-  {univ:"鹿児島国際大学", name:"増留 汐里", eng:"Shiori Masudome", img:"Shiori.jpg"},
-  {univ:"志學館大学", name:"森口 大巨", eng:"Daiki Moriguchi", img:"Daiki.jpg"},
-  {univ:"鹿児島大学", name:"佐々木 彩華", eng:"Ayaka Sasaki", img:"Ayaka.jpg"},
-  {univ:"志學館大学", name:"岡元 里桜", eng:"Rio Okamoto", img:"Rio.jpg"},
-  {univ:"鹿児島県立短期大学", name:"寺田 桜心", eng:"Omi Terada", img:"Omi.jpg"},
-  {univ:"鹿児島大学", name:"株本 雅樹", eng:"Masaki Kabumoto", img:"Masaki.jpg"},
-  {univ:"鹿児島国際大学", name:"高野 愛佳", eng:"Aika Takano", img:"Aika.jpg"},
-  {univ:"鹿児島純心女子大学", name:"高橋 愛梨", eng:"Airi Takahashi", img:"Airi.jpg"},
-  {univ:"北九州市立大学", name:"高橋 空雅", eng:"Kuga Takahashi", img:"Kuga.jpg"},
-  {univ:"鹿児島大学", name:"寺田 麗々蘭", eng:"Ririka Terada", img:"Ririka.jpg"},
+  {univ:"鹿児島大学", name:"佐々木 彩華", eng:"Ayaka Sasaki", img:"ayaka.jpg"},
+  {univ:"志學館大学", name:"石川 葵", eng:"Aoi Ishikawa", img:"aoi.jpg"},
+  {univ:"志學館大学", name:"森口 大巨", eng:"Daiki Moriguchi", img:"daiki.jpg"},
+  {univ:"鹿児島大学", name:"江田 彩夏", eng:"Ayaka Eta", img:"etaayaka.jpg"},
+  {univ:"鹿児島大学", name:"帖佐 安希子", eng:"Akiko Chosa", img:"akiko.jpg"},
+  {univ:"鹿児島県立短期大学", name:"池上 未紗", eng:"Misa Ikegami", img:"misa.jpg"},
+  {univ:"鹿児島国際大学", name:"黒岩 海斗", eng:"Kaito Kuroiwa", img:"kaito.jpg"},
+  {univ:"鹿児島大学", name:"小牧 かなで", eng:"Kanade Komaki", img:"kanade.jpg"},
+  {univ:"鹿児島国際大学", name:"溜 祐之介", eng:"Yunosuke Tamari", img:"yunosuke.jpg"},
+  {univ:"鹿児島大学", name:"藤本 光陽", eng:"Koyo Fujimoto", img:"koyo.jpg"},
 ];
 
 var resize_func = function (width) {
@@ -35,9 +33,9 @@ var resize_func = function (width) {
     //add member function
     $.each(member_list,function(i,v){
       $("#member-list").append("\
-      <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
+      <div class='col-6 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
         <center style='width: 100px; color: var(--main-bg-color);'> \
-          <img src='images/members/"+v.img+"' style='width: 75px; border:1px var(--main-bg-color) solid; border-radius: 50%;'> \
+          <img src='images/members/"+v.img+"' style='width: 90px; border:1px var(--main-bg-color) solid;'> \
           <div style='width: 90px; margin: 5px auto 0; font-size: 10px; border-bottom: 1px solid; padding-bottom: 3px;'> \
             "+v.univ+" \
           </div> \
@@ -62,7 +60,7 @@ var resize_func = function (width) {
     $('.entry_btn').addClass('entry_btn_ipad');
     $('#project-left').css({'background':''});
     $('#field-right').css({'background':''});
-    $('#field-img').css({'width':'130%'});
+    $('#field-img').css({'width':'80%'});
     $('h2').css({'font-size':''});
     $('#member-list').empty();
     //add member function
@@ -70,7 +68,7 @@ var resize_func = function (width) {
       $("#member-list").append("\
       <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
         <center style='width: 110px; color: var(--main-bg-color);'> \
-          <img src='images/members/"+v.img+"' style='width: 110px; border:1px var(--main-bg-color) solid; border-radius: 50%;'> \
+          <img src='images/members/"+v.img+"' style='width: 110px; border:1px var(--main-bg-color) solid; '> \
           <div style='width: 110px; margin: 5px auto 0; font-size: 15px; border-bottom: 1px solid; padding-bottom: 3px;'> \
             "+v.univ+" \
           </div> \
@@ -94,16 +92,16 @@ var resize_func = function (width) {
     $('.entry_btn').removeClass('entry_btn_ipad');
     $('#project-left').css({'background':''});
     $('#field-right').css({'background':''});
-    $('#field-img').css({'width':'130%'});
+    $('#field-img').css({'width':'100%'});
     $('h2').css({'font-size':''});
-    $('#field-block').css({'margin-left':'150px'})
+    $('#field-block').css({'margin-left':'40%'})
     $('#member-list').empty();
     //add member function
     $.each(member_list,function(i,v){
       $("#member-list").append("\
-      <div class='col-4 col-md-3 col-lg-3' style='margin-bottom: 15px;'> \
+      <div class='col-xs-15' style='margin: 15px 0px 0 0px'> \
         <center style='width: 150px; color: var(--main-bg-color);'> \
-          <img src='images/members/"+v.img+"' style='width: 110px; border:1px var(--main-bg-color) solid; border-radius: 50%;'> \
+          <img src='images/members/"+v.img+"' style='width: 110px; border:1px var(--main-bg-color) solid; '> \
           <div style='width: 130px; margin: 5px auto 0; font-size: 14px; border-bottom: 1px solid; padding-bottom: 3px;'> \
             "+v.univ+" \
           </div> \
@@ -160,9 +158,9 @@ $(function(){
     });
   });
 
-  $(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-  });
+  //$(".navbar-nav li a").click(function(event) {
+    //$(".navbar-collapse").collapse('hide');
+  //});
 
   $('a[href^="#"]').click(function(){
     var offsetY = -65;
