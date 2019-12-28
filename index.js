@@ -4,7 +4,7 @@ var member_list = [
   {univ:"志學館大学", name:"森口 大巨", eng:"Daiki Moriguchi", img:"daiki.jpg"},
   {univ:"鹿児島大学", name:"江田 彩夏", eng:"Ayaka Eta", img:"etaayaka.jpg"},
   {univ:"鹿児島大学", name:"帖佐 安希子", eng:"Akiko Chosa", img:"akiko.jpg"},
-  {univ:"鹿児島県立短期大学", name:"池上 未紗", eng:"Misa Ikegami", img:"misa.jpg"},
+  {univ:"鹿児島女子短期大学", name:"池上 未紗", eng:"Misa Ikegami", img:"misa.jpg"},
   {univ:"鹿児島国際大学", name:"黒岩 海斗", eng:"Kaito Kuroiwa", img:"kaito.jpg"},
   {univ:"鹿児島大学", name:"小牧 かなで", eng:"Kanade Komaki", img:"kanade.jpg"},
   {univ:"鹿児島国際大学", name:"溜 祐之介", eng:"Yunosuke Tamari", img:"yunosuke.jpg"},
