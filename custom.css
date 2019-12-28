@@ -316,9 +316,10 @@ a, p {
   /* background-position-y: 100%; */
 }
 #information {
-  background:url(./images/box-info.svg) center no-repeat/35vh;
+ /* background:url(./images/box-info.svg) center no-repeat/35vh;
   background-position-x: 90%;
   background-position-y: 100%;
+  */
 }
 .question {
   border-bottom: dashed 1px var(--main-bg-color);
